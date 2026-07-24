@@ -28,8 +28,9 @@ public class TestBase {
     static void setupSelenideEnv(){
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://qa-guru.github.io/one-page-form";
-        Configuration.browserVersion = "128.0";
+        Configuration.browserVersion = "149.0";
         Configuration.browser = "chrome";
+        Configuration.timeout = 20000; // default 4000
         Configuration.remote = Secrets.remoteBrowserUrl;
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.of(
