@@ -1,0 +1,220 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.9.22.1 built on Friday May 10, 2024 at 23:23:16 PDT
+---- Dump Properties ---
+Dump file: ajcore.20260725.001008.688.txt
+Dump reason: org.aspectj.weaver.BCException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+org.aspectj.weaver.BCException: Error processing class file
+when weaving type pages.TextBoxPage
+when weaving classes 
+when weaving 
+
+	at org.aspectj.weaver.bcel.LazyClassGen.getJavaClassBytesIncludingReweavable(LazyClassGen.java:769)
+	at org.aspectj.weaver.bcel.BcelWeaver.getClassFilesFor(BcelWeaver.java:1456)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1418)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1189)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:574)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:398)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:122)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:51)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1026)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3545)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2601)
+	at org.junit.platform.commons.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:1798)
+	at org.junit.platform.commons.util.ReflectionUtils.findAllFieldsInHierarchy(ReflectionUtils.java:1465)
+	at org.junit.platform.commons.util.ReflectionUtils.getSuperclassFields(ReflectionUtils.java:1953)
+	at org.junit.platform.commons.util.ReflectionUtils.findAllFieldsInHierarchy(ReflectionUtils.java:1468)
+	at org.junit.platform.commons.util.ReflectionUtils.streamFields(ReflectionUtils.java:1454)
+	at org.junit.jupiter.engine.descriptor.ExtensionUtils.streamExtensionRegisteringFields(ExtensionUtils.java:205)
+	at org.junit.jupiter.engine.descriptor.ExtensionUtils.registerExtensionsFromStaticFields(ExtensionUtils.java:93)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.prepare(ClassBasedTestDescriptor.java:190)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.prepare(ClassBasedTestDescriptor.java:87)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:96)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:161)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:147)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:145)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:101)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.executeEngine(EngineExecutionOrchestrator.java:230)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.failOrExecuteEngine(EngineExecutionOrchestrator.java:204)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:172)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:101)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:64)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:150)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:63)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:109)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:91)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 67
+	at aj.org.objectweb.asm.ClassReader.<init>(ClassReader.java:200)
+	at aj.org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)
+	at aj.org.objectweb.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.aspectj.weaver.bcel.asm.StackMapAdder.addStackMaps(StackMapAdder.java:42)
+	at org.aspectj.weaver.bcel.LazyClassGen.getJavaClassBytesIncludingReweavable(LazyClassGen.java:771)
+	at org.aspectj.weaver.bcel.BcelWeaver.getClassFilesFor(BcelWeaver.java:1456)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1418)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1189)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:574)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:398)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:122)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:51)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1026)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3650)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2735)
+	at org.junit.platform.commons.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:1820)
+	at org.junit.platform.commons.util.ReflectionUtils.findMethod(ReflectionUtils.java:1659)
+	at org.junit.platform.commons.util.ReflectionUtils.isMethodPresent(ReflectionUtils.java:1507)
+	at org.junit.jupiter.engine.discovery.predicates.TestClassPredicates.hasTestOrTestFactoryOrTestTemplateMethods(TestClassPredicates.java:106)
+	at org.junit.jupiter.engine.discovery.predicates.TestClassPredicates.looksLikeIntendedTestClass(TestClassPredicates.java:81)
+	at org.junit.jupiter.engine.discovery.predicates.TestClassPredicates.looksLikeIntendedTestClass(TestClassPredicates.java:75)
+	at org.junit.jupiter.engine.discovery.ClassSelectorResolver.isAcceptedStandaloneTestClass(ClassSelectorResolver.java:115)
+	at org.junit.jupiter.engine.discovery.ClassSelectorResolver.resolveStandaloneTestClass(ClassSelectorResolver.java:106)
+	at org.junit.jupiter.engine.discovery.ClassSelectorResolver.resolve(ClassSelectorResolver.java:102)
+	at org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolution.lambda$resolve$2(EngineDiscoveryRequestResolution.java:135)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1686)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:147)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:588)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:574)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:687)
+	at org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolution.resolve(EngineDiscoveryRequestResolution.java:189)
+	at org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolution.resolve(EngineDiscoveryRequestResolution.java:126)
+	at org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolution.resolveCompletely(EngineDiscoveryRequestResolution.java:92)
+	at org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolution.run(EngineDiscoveryRequestResolution.java:83)
+	at org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver.resolve(EngineDiscoveryRequestResolver.java:149)
+	at org.junit.jupiter.engine.discovery.DiscoverySelectorResolver.resolveSelectors(DiscoverySelectorResolver.java:63)
+	at org.junit.jupiter.engine.JupiterTestEngine.discover(JupiterTestEngine.java:70)
+	at org.junit.platform.launcher.core.EngineDiscoveryOrchestrator.discoverEngineRoot(EngineDiscoveryOrchestrator.java:195)
+	at org.junit.platform.launcher.core.EngineDiscoveryOrchestrator.discoverSafely(EngineDiscoveryOrchestrator.java:174)
+	at org.junit.platform.launcher.core.EngineDiscoveryOrchestrator.discover(EngineDiscoveryOrchestrator.java:119)
+	at org.junit.platform.launcher.core.EngineDiscoveryOrchestrator.discover(EngineDiscoveryOrchestrator.java:84)
+	at org.junit.platform.launcher.core.DefaultLauncher.discover(DefaultLauncher.java:104)
+	... 26 more
+---- System Properties ---
+java.specification.version=23
+sun.cpu.isalist=amd64
+sun.jnu.encoding=Cp1251
+org.gradle.test.worker=1
+java.class.path=C:\\Users\\Slava\\.gradle\\caches\\8.10\\workerMain\\gradle-worker.jar;C:\\Users\\Slava\\QAguru\\HW11_Jenkins_ui_tests\\build\\classes\\java\\test;C:\\Users\\Slava\\QAguru\\HW11_Jenkins_ui_tests\\build\\resources\\test;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\com.codeborne\\selenide\\7.13.0\\bbcc376d9e805759e7477fd6aa5e2ca907afdb81\\selenide-7.13.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\io.qameta.allure\\allure-selenide\\2.32.0\\f44e2f9abe93f4abb76af46f07976cc73875383e\\allure-selenide-2.32.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-params\\5.14.1\\8f2932b4a69f3831370fed1c09253108684fb606\\junit-jupiter-params-5.14.1.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-engine\\5.14.1\\f230d30ae8ce4c4171eaabc086e00a645ad054ed\\junit-jupiter-engine-5.14.1.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\io.qameta.allure\\allure-junit5\\2.32.0\\4ba2d203b45d3b748c88329054127dfc4d314350\\allure-junit5-2.32.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\io.qameta.allure\\allure-junit-platform\\2.32.0\\319a1c022ff799eea1faa4cb66701919d6b7da69\\allure-junit-platform-2.32.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-api\\5.14.1\\8943c1d7f3ad50a08fa654e92d9241dc632bbc4c\\junit-jupiter-api-5.14.1.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-launcher\\1.14.1\\91426ba542c420b118debe53746609f29ac7f333\\junit-platform-launcher-1.14.1.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-engine\\1.14.1\\4fd44468a55879fd17ed015476717698f3cf5e85\\junit-platform-engine-1.14.1.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-commons\\1.14.1\\3d6d355ba36d7620bfef87b896708a975accc108\\junit-platform-commons-1.14.1.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter\\5.14.1\\73861dcfc09f81fa2c21ccea05af56d756d62173\\junit-jupiter-5.14.1.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.slf4j\\slf4j-simple\\2.0.17\\9872a3fd794ffe7b18d17747926a64d61526ca96\\slf4j-simple-2.0.17.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\com.github.javafaker\\javafaker\\1.0.2\\be0ff271b1208416822db4438864df47f90af92f\\javafaker-1.0.2.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\com.codeborne\\selenide-core\\7.13.0\\36cdc29d93fddbf66c750b9b8bb45d902cde4877\\selenide-core-7.13.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-java\\4.39.0\\2cc38c8dbef9d6e8774f05c2d2e8088180858ed4\\selenium-java-4.39.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-chrome-driver\\4.39.0\\47d3827d984ff3b8c995dba34abf0ac9c72fa07d\\selenium-chrome-driver-4.39.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-devtools-v141\\4.39.0\\4d71b5bb50420d4c39867953336d9eea2000d4d\\selenium-devtools-v141-4.39.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-devtools-v142\\4.39.0\\54ace5244e0179350f36e321d98c041e64734683\\selenium-devtools-v142-4.39.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-devtools-v143\\4.39.0\\cb006881fa1ce023591482a37d9a9bcbcc58fe4b\\selenium-devtools-v143-4.39.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-edge-driver\\4.39.0\\322f97cdc53dd57e657f24e9051e101a6366af5\\selenium-edge-driver-4.39.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-firefox-driver\\4.39.0\\3b248d1985fa887dc2b0a2e137b0e3aa7b1ee92c\\selenium-firefox-driver-4.39.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-ie-driver\\4.39.0\\accbacb03c2da4d46dc15ff101e734fd55c28868\\selenium-ie-driver-4.39.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-safari-driver\\4.39.0\\69bc0c15fc8f6c9968e60dbedd5f23f6a0f9af63\\selenium-safari-driver-4.39.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-support\\4.39.0\\71fe567efcd48c9c91b6c31158702d18b3927a3f\\selenium-support-4.39.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-chromium-driver\\4.39.0\\e2b124d7bfc80758d7db47bbe35a91e9258c4ee5\\selenium-chromium-driver-4.39.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-remote-driver\\4.39.0\\72731193bb847c241ddf89a16628cd9880c36f1\\selenium-remote-driver-4.39.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-manager\\4.39.0\\12d1a3c83657dd04bdcbf50068b5e4dfb9a1e43f\\selenium-manager-4.39.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-http\\4.39.0\\a34302db1b1d318234862110cea250dffc218b12\\selenium-http-4.39.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-json\\4.39.0\\da64593dcfc046c988bb65e05b77e010d094fba4\\selenium-json-4.39.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-os\\4.39.0\\50ca14dd91a917fdcd508974ed4fc85b7440b07c\\selenium-os-4.39.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-api\\4.39.0\\3040eb9d980db6dc7c13291c6264846ca8900259\\selenium-api-4.39.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\com.google.guava\\guava\\33.5.0-jre\\8699de25f2f979108d6c1b804a7ba38cda1116bc\\guava-33.5.0-jre.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.jspecify\\jspecify\\1.0.0\\7425a601c1c7ec76645a78d22b8c6a627edee507\\jspecify-1.0.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\com.google.errorprone\\error_prone_annotations\\2.45.0\\e4b613b411b934eee185aad72bee4c6148fb8dc3\\error_prone_annotations-2.45.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-lang3\\3.20.0\\65897b3e5731220962e659e001904af3c3cbeba9\\commons-lang3-3.20.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\commons-io\\commons-io\\2.21.0\\52a6f68fe5afe335cde95461dd5c3412f04996f7\\commons-io-2.21.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\io.qameta.allure\\allure-test-filter\\2.32.0\\6b1e6f7081ed9331b649b3493b7c45fe2be9ff5e\\allure-test-filter-2.32.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\io.qameta.allure\\allure-java-commons\\2.32.0\\1d3f479e115f8a18c99339fc57f8cea5a552e210\\allure-java-commons-2.32.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.httpcomponents.client5\\httpclient5\\5.5.1\\89ab9084b94afb7893a54f4d09b07c25246af5a7\\httpclient5-5.5.1.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.slf4j\\slf4j-api\\2.0.17\\d9e58ac9c7779ba3bf8142aff6c830617a7fe60f\\slf4j-api-2.0.17.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.yaml\\snakeyaml\\1.23\\e8520d52edca3d8dc0f366cff520fb4498ec8a5f\\snakeyaml-1.23-android.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\com.github.mifmif\\generex\\1.0.2\\b378f873b4e8d7616c3d920e2132cb1c87679600\\generex-1.0.2.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\com.github.valfirst.browserup-proxy\\browserup-proxy-core\\3.2.2\\9e2331a517d7c583f7be11b7319e4a907bbc12ba\\browserup-proxy-core-3.2.2.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.opentest4j\\opentest4j\\1.3.0\\152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e\\opentest4j-1.3.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\io.qameta.allure\\allure-model\\2.32.0\\d351983d2dc9e61985581580d3f82cb5f250182f\\allure-model-2.32.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\dk.brics.automaton\\automaton\\1.11-8\\6ebfa65eb431ff4b715a23be7a750cbc4cc96d0f\\automaton-1.11-8.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\com.google.auto.service\\auto-service-annotations\\1.1.1\\da12a15cd058ba90a0ff55357fb521161af4736d\\auto-service-annotations-1.1.1.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-exporter-logging\\1.56.0\\ad35ae2bba0d9da3b4ef15626fa869ad510848ea\\opentelemetry-exporter-logging-1.56.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-sdk-extension-autoconfigure\\1.56.0\\170a9a37f8fcaa4de3b47f82305341d9c69bf854\\opentelemetry-sdk-extension-autoconfigure-1.56.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-sdk-extension-autoconfigure-spi\\1.56.0\\88ac4298b49057382a408e378924dbf34cd8004e\\opentelemetry-sdk-extension-autoconfigure-spi-1.56.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-sdk\\1.56.0\\b29e0be8b46161218e2982795e87f7390927e585\\opentelemetry-sdk-1.56.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-sdk-trace\\1.56.0\\b42d0bf53937090136b778e2b698f5cf5124c67c\\opentelemetry-sdk-trace-1.56.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-sdk-metrics\\1.56.0\\b2bf97cb308b1f6c01dd013d7e57c972f8cd7754\\opentelemetry-sdk-metrics-1.56.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-sdk-logs\\1.56.0\\4db2e31d565ea565d654c073a54f5f0cf2902b00\\opentelemetry-sdk-logs-1.56.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-sdk-common\\1.56.0\\8c7561ece955767754b7ee375b42250c31017407\\opentelemetry-sdk-common-1.56.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-api\\1.56.0\\6a3c8bc6db9ac127b44534b3c2d44f90c6329b3f\\opentelemetry-api-1.56.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-context\\1.56.0\\44d1c7a2856e9586e94384010a1823a523dad22b\\opentelemetry-context-1.56.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\net.bytebuddy\\byte-buddy\\1.18.2\\7ac991b4bd502e2567efcdecc0d2e9b3f7dd3859\\byte-buddy-1.18.2.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.httpcomponents.core5\\httpcore5-h2\\5.3.6\\5b4b321d0001aac957f5db293e3cbc4099fc15b8\\httpcore5-h2-5.3.6.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.httpcomponents.core5\\httpcore5\\5.3.6\\2c7f0d11747f9485a02c9f622c0f0477d7ce8677\\httpcore5-5.3.6.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\com.google.guava\\failureaccess\\1.0.3\\aeaffd00d57023a2c947393ed251f0354f0985fc\\failureaccess-1.0.3.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\com.google.guava\\listenablefuture\\9999.0-empty-to-avoid-conflict-with-guava\\b421526c5f297295adef1c886e5246c39d4ac629\\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\com.google.j2objc\\j2objc-annotations\\3.1\\a892ca9507839bbdb900d64310ac98256cab992f\\j2objc-annotations-3.1.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-common\\1.56.0\\baaab365acc2f85c8d97d0582e25f1a1a02fdd02\\opentelemetry-common-1.56.0.jar;C:\\Users\\Slava\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-exec\\1.6.0\\d24a2fd672c3c278e60388bef656d9d89cf9df4f\\commons-exec-1.6.0.jar
+java.vm.vendor=Oracle Corporation
+sun.arch.data.model=64
+user.variant=
+java.vendor.url=https://java.oracle.com/
+user.timezone=Asia/Tomsk
+java.vm.specification.version=23
+os.name=Windows 10
+user.country=RU
+sun.java.launcher=SUN_STANDARD
+sun.boot.library.path=C:\Users\Slava\.jdks\openjdk-23.0.1\bin
+sun.java.command=worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 1'
+jdk.debug=release
+allure.results.directory=C:\Users\Slava\QAguru\HW11_Jenkins_ui_tests\build\allure-results
+sun.cpu.endian=little
+user.home=C:\Users\Slava
+user.language=ru
+java.specification.vendor=Oracle Corporation
+java.version.date=2024-10-15
+java.home=C:\Users\Slava\.jdks\openjdk-23.0.1
+file.separator=\
+java.vm.compressedOopsMode=32-bit
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+java.specification.name=Java Platform API Specification
+user.script=
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+java.runtime.version=23.0.1+11-39
+user.name=Slava
+stdout.encoding=Cp1251
+path.separator=;
+os.version=10.0
+java.runtime.name=OpenJDK Runtime Environment
+file.encoding=UTF-8
+java.vm.name=OpenJDK 64-Bit Server VM
+java.vendor.url.bug=https://bugreport.java.com/bugreport/
+java.io.tmpdir=C:\Users\Slava\AppData\Local\Temp\
+java.version=23.0.1
+user.dir=C:\Users\Slava\QAguru\HW11_Jenkins_ui_tests
+os.arch=amd64
+java.vm.specification.name=Java Virtual Machine Specification
+org.gradle.internal.worker.tmpdir=C:\Users\Slava\QAguru\HW11_Jenkins_ui_tests\build\tmp\test\work
+sun.os.patch.level=
+native.encoding=Cp1251
+java.library.path=C:\Users\Slava\.jdks\openjdk-23.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Slava\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.2.1\bin;;C:\Program Files (x86)\EShare\;C:\Users\Slava\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Slava\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2022.2.1\bin;C:\Program Files (x86)\EShare\;C:\Users\Slava\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Slava\AppData\Local\gitkraken\bin;.
+junit.jupiter.extensions.autodetection.enabled=true
+java.vm.info=mixed mode, sharing
+stderr.encoding=Cp1251
+java.vendor=Oracle Corporation
+java.vm.version=23.0.1+11-39
+sun.io.unicode.encoding=UnicodeLittle
+java.class.version=67.0
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty
