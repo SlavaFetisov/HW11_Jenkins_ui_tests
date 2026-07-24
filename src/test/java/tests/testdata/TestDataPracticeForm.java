@@ -61,7 +61,7 @@ public class TestDataPracticeForm {
             "English"
     );
     public String hobbie = faker.options().option("Sports", "Reading", "Music");
-    public String uploadPicture = "img.png";
+    public String uploadPicture = "picture.png";
     public String currentAddress = "Pushkina, Kolotushkina";
     public String state = faker.options().option(
             "NCR",

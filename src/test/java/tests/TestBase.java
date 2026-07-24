@@ -30,7 +30,7 @@ public class TestBase {
         Configuration.baseUrl = "https://qa-guru.github.io/one-page-form";
         Configuration.browserVersion = "149.0";
         Configuration.browser = "chrome";
-        Configuration.timeout = 20000; // default 4000
+        Configuration.timeout = 5000; // default 4000
         Configuration.remote = Secrets.remoteBrowserUrl;
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.of(
