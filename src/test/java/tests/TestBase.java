@@ -26,10 +26,11 @@ public class TestBase {
 
     @BeforeAll
     static void setupSelenideEnv(){
-        Configuration.browserSize = "1920x1080";
-        Configuration.baseUrl = "https://qa-guru.github.io/one-page-form";
-        Configuration.browserVersion = "149.0";
-        Configuration.browser = "chrome";
+        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
+        Configuration.headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
+        Configuration.baseUrl = System.getProperty("baseUrl", "https://qa-guru.github.io/one-page-form");
+        Configuration.browserVersion = System.getProperty("browserVersion");
+        Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.timeout = 5000; // default 4000
         Configuration.remote = Secrets.remoteBrowserUrl;
         DesiredCapabilities capabilities = new DesiredCapabilities();

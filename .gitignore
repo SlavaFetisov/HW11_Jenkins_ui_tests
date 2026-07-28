@@ -17,7 +17,8 @@ out/
 !**/src/test/**/out/
 .idea/
 .idea
-
+.notifications
+.notifications/
 
 ### Eclipse ###
 .apt_generated
